@@ -61,6 +61,17 @@
 
 }
 
+.buttonNav{
+    width: 20%;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    margin-top: 20%;
+    padding: 10px;
+}
+
 .footer{
     margin-top: 10%;
     padding: 15px;
@@ -221,6 +232,62 @@
     margin-top: 30%;
 }
 
+button {
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 36px;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+  }
+  
+  button{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+.buttonNext:after {
+    content: '-->';
+    position: absolute;
+    opacity: 0;  
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+ .buttonNext:hover{
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  
+.buttonNext:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+
+
+
+.buttonPrev:after {
+    content: '<--';
+    position: absolute;
+    opacity: 0;  
+    top: 14px;
+    left: -20px;
+    transition: 0.5s;
+  }
+  
+ .buttonPrev:hover{
+    padding-right: 8px;
+    padding-left:24px;
+  }
+  
+.buttonPrev:hover:after {
+    opacity: 1;
+    left: 10px;
+  }
 
 
 @media (max-width: 450px){
