@@ -27,6 +27,15 @@ function contador(){
     person(valor)
 }
 
+function contadorRetorno(){
+    valor--
+    if (valor == 0){
+        valor = 1
+        person(valor)
+    }
+    else
+        person(valor)
+}
 
 
 
