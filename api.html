@@ -8,7 +8,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/custom.css'>
-    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
@@ -16,19 +16,21 @@
 <body>
     <div class="row">
         <div id="divLeft" class="col-lg-6 col-md-12 col-xs-12 col-sm-12">
-            <h1 class="quiz_nerd margTopBig"><span>NOME</span></h1>
+            <h1 class="quiz_nerd margTopBig"><span id="char">NOME</span></h1>
             <h2 class="colortwo"><span id="state">State</span> - <span id="race">Race</span></h2>
             <p class="margTop">Last known location: <span id="location">LOCATION</span></p>
             <br />
-            <a href="api.html"><button class="buttonPrev yeloowQuizBack buttonNav">PREV</button></a> &nbsp;
-            <a href="api.html"><button class="buttonNext yeloowQuizBack buttonNav">NEXT</button></a>
+            
+            <a href="#"><button  class="buttonPrev yeloowQuizBack buttonNav">PREV</button></a> &nbsp;
+
+            <a href="#"><button onclick="contador()" class="buttonNext yeloowQuizBack buttonNav">NEXT</button></a>
         </div>
 
         <div id="divRight" class="col-lg-6 col-md-12 col-xs-12 col-sm-12">
-            <img class="imgBack" src="img/RickyandMorty.png">
+            <img id="image" class="imgBack" src="img/RickyandMorty.png">
         </div>
     </div>
-    <script type="text/javascript" src='js/main.js'></script>
+    <script type="text/javascript" src='js/script.js'></script>
 </body>
 
 </html>
