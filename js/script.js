@@ -32,8 +32,7 @@ function contador(){
 function contadorRetorno(){
     valor--
     if (valor == 0){
-        valor = 1
-        person(valor)
+        window.location.href = "index.html"
     }
     else
         person(valor)
