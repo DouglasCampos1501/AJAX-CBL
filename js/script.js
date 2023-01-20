@@ -16,8 +16,7 @@ function person(valor) {
         state.innerHTML = jsonBody.status
         race.innerHTML = jsonBody.species
         locat.innerHTML = jsonBody.location.name
-        image.innerHTML = `<img id="image" class="imgBack" src="${jsonBody.image}">`
- 
+        image.src = jsonBody.image 
         })
 
 }
