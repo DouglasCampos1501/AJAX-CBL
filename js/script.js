@@ -3,7 +3,8 @@ const state = document.querySelector("#state");
 const race = document.querySelector("#race");
 const locat = document.querySelector("#location")
 const image = document.querySelector("#image")
-let valor = 0;
+
+let valor = 1;
 
 function person(valor) {
 
@@ -37,8 +38,3 @@ function contadorRetorno(){
     else
         person(valor)
 }
-
-
-
-
-
