@@ -17,6 +17,8 @@ function person(valor) {
         race.innerHTML = jsonBody.species
         locat.innerHTML = jsonBody.location.name
         image.src = jsonBody.image 
+        image.style.width = "100vh"
+        image.style.height = "100vh"
         })
 
 }
