@@ -1,4 +1,3 @@
-
 const char = document.querySelector("#char");
 const state = document.querySelector("#state");
 const race = document.querySelector("#race");
@@ -35,7 +34,8 @@ function contadorRetorno() {
 }
 
 // tem que arrimar isso
-instance.interceptors.response.use((response) => {
+axios.interceptors.response.use((response) => {
+    console.log(response)
     return parseBody(response)
   }, error => {
     console.warn('Error status', error.response.status)
