@@ -33,7 +33,7 @@ function contadorRetorno() {
         person(valor)
 }
 
-// tem que arrimar isso
+
 axios.interceptors.response.use((response) => {
     console.log(response)
     return parseBody(response)
